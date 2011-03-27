@@ -1,0 +1,5 @@
+The script can help to detect compromised mirrors for some hacking scenarios,
+but it doesn't guaranty a total security for more complex, though improbable, ones.
+
+It's recommended to use 3 or 4 different mirrors from diverse locations,
+and at least one for the full compare option.
