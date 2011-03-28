@@ -328,7 +328,7 @@ unset repolist
 for repo in  core extra community community-staging community-testing \
              gnome-unstable kde-unstable multilib multilib-testing staging \
              testing; do
-	if [ -d "$dbpath/$repo" ]; then
+	if [ -f "$dbpath/$repo.db" ]; then
 		repolist="$repolist $repo"
 	fi
 done
@@ -998,6 +998,7 @@ exit $err
 # 0.8.13:  changed to work with pacman >=3.5
 #          default dbpath changed to /var/lib/pacman/sync
 #          names of sync database changed from $repo.db.tar.gz to $repo.db
+#          changed condition for getting repo list
 #          changed algorithm to search for desc file in databases
 #          using 'tar xf' without untaring the sync databases
 # 0.8.12:  corrected --install 'sudo cannot find working dir' msg
