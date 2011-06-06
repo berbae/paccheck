@@ -830,7 +830,7 @@ if [[ -n "$pkglist" ]]; then
     for lpk in $targetlist; do
 	fpkg=${lpk##*/}
 	pkg=${fpkg%-*}
-	echo "$pkg"
+	echo $pkg
     done
     ok=0
     while true; do
