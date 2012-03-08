@@ -3,3 +3,6 @@ but it doesn't guaranty a total security for more complex, though improbable, on
 
 It's recommended to use 3 or 4 different mirrors from diverse locations,
 and at least one for the full compare option.
+
+Since the release of pacman 4 which implements package gpg signing, no further 
+development will be made to this script.
